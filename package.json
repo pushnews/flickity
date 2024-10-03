@@ -11,7 +11,7 @@
     "dist": "npm run bundleCss && npm run bundleJs && npm run uglify",
     "bundleCss": "cp css/flickity.css dist/flickity.css && node bin/bundle-css.js",
     "bundleJs": "node bin/bundle-js.js",
-    "uglify": "npx uglifyjs dist/flickity.pkgd.js -o dist/flickity.pkgd.min.js --mangle --comments /^!/",
+    "uglify": "npx uglifyjs dist/flickity.pkgd.js -o dist/flickity.custom-pn.pkgd.min.js --mangle --comments /^!/",
     "version": "node bin/version.js && npm run dist && git add -A css js dist"
   },
   "dependencies": {

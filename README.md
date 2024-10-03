@@ -1,3 +1,15 @@
+# Flickity-pn
+
+## Forked Repository
+
+This repository is a fork of [Flickity](https://github.com/metafizzy/flickity/tree/v2.3.0) v2.3.0.
+
+Flickity had a conflict with the AMP Pages script - this script overwrites the native HTMLElement and stores the original in the HTMLElementOrig variable.
+
+We changed the code so that we first check if HTMLElementOrig exists, and if so, use it instead of HTMLElement.
+
+Original readme below.
+
 # Flickity
 
 _Touch, responsive, flickable carousels_
